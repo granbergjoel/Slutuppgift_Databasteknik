@@ -33,8 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } 
     
     else {
-        exit("<br><div class='alert alert-warning' role='alert'>
-        <p>$email är inte en giltig e-postadress</p></div>");
+        $message ="<br><div class='alert alert-warning' role='alert'>
+        <p>$email är inte en giltig e-postadress</p></div>";
     }      
     
 }

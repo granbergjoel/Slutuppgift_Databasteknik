@@ -1,8 +1,6 @@
-
 <?php require_once ("header.php"); require_once ("dbwebshop.php");?>
 
 <br>
-
 <?php
 
 $conn->exec("USE $dbName");
@@ -53,7 +51,6 @@ echo $terminate;
 ?>
 
 <hr>
-
 <?php require_once ("footer.php");?>
 
 
