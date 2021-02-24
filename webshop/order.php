@@ -107,7 +107,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $result = $stmt->fetchAll();
 
-    $customer_id = $result;
+ 
+
+    $customer_id = $result[0]['customer_id'];
   }
 
   if(!isset($message)){

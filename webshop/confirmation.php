@@ -8,7 +8,7 @@ $conn->exec("USE $dbName");
 
 $id=$_GET['id'];
 
-$stmt = $conn->prepare("SELECT * FROM orders WHERE order_id=$id;");
+$stmt = $conn->prepare("SELECT customer_id FROM orders WHERE order_id=$id;");
 $stmt->execute();
 
 $result = $stmt->fetchAll();
@@ -21,7 +21,13 @@ $result = $stmt->fetchAll();
 foreach($result as $key =>$value){
 $message = "<div class='alert alert-success' role='success'>
             <p>Hej $value[customer]!</p>
+            <p>Adress: $value[custom_add]!</p>
+            <p>Email: $value[email]!</p>
+            <p>Tele: $value[phone]!</p>
+            
+            
             <p>En order har skapats med Order-id: $id!</p>
+
             </div>";
         }
  echo $message;
