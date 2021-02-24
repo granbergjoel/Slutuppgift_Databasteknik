@@ -53,14 +53,14 @@ $conn->exec("CREATE TABLE contacts(
 
 $stmt = $conn->prepare(
 
-"INSERT INTO products(item, price, img, descriptions) VALUES ('Choco Cupcakes' ,11 ,'img/0_sm.jpg' ,'A classic! Rich chocolate on a moist cupcake.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Blueberry Bomb' ,9 ,'img/1_sm.jpg' ,'A delicious blueberry pastry with sugar frosting.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Sweet Croissant',7,'img/2_sm.jpg' ,'A crispy, puffy croissant filled with vanilla cream.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Cinnamon Rolls',12,'img/3_sm.jpg' ,'Sugar, cinnamon & flour. Dont get no better.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Eastern Pastries',9,'img/4_sm.jpg' ,'Exotic pastry topped with pistage nuts.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Puff Pastry',13,'img/5_sm.jpg' ,'Thick vanilla cream in an crusty puff pastry.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Macarons',6,'img/6_sm.jpg' ,'French macarons in all colors of the rainbow.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Jelly Donuts',8,'img/7_sm.jpg' ,'Iconic! Yam & dough rolled in sweet sugar.');
-INSERT INTO products(item, price, img, descriptions) VALUES ('Mini Desserts',7,'img/8_sm.jpg' ,'Just a nibble, topped with fresh juicy strawberries.');");
+"INSERT INTO products(item, price, img, descriptions) VALUES ('Choco Cupcakes' ,11 ,'0_sm.jpg' ,'A classic! Rich chocolate on a moist cupcake.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Blueberry Bomb' ,9 ,'1_sm.jpg' ,'A delicious blueberry pastry with sugar frosting.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Sweet Croissant',7,'2_sm.jpg' ,'A crispy, puffy croissant filled with vanilla cream.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Cinnamon Rolls',12,'3_sm.jpg' ,'Sugar, cinnamon & flour. Dont get no better.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Eastern Pastries',9,'4_sm.jpg' ,'Exotic pastry topped with pistage nuts.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Puff Pastry',13,'5_sm.jpg' ,'Thick vanilla cream in an crusty puff pastry.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Macarons',6,'6_sm.jpg' ,'French macarons in all colors of the rainbow.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Jelly Donuts',8,'7_sm.jpg' ,'Iconic! Yam & dough rolled in sweet sugar.');
+INSERT INTO products(item, price, img, descriptions) VALUES ('Mini Desserts',7,'8_sm.jpg' ,'Just a nibble, topped with fresh juicy strawberries.');");
 
 $stmt->execute();

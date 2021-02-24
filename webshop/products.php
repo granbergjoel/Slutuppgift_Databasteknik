@@ -54,7 +54,7 @@ foreach($result as $key => $value){
 
 <div class='col-lg-4 col-md-6 mb-4'>
   <div class='card h-100'>
-  <img class='card-img-top' src='$value[img]' alt=''>
+  <img class='card-img-top' src='img/$value[img]' alt=''>
 
     <div class='card-body'>
     <h4 class='card-title'>$value[item]</a></h4>

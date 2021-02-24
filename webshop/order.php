@@ -19,7 +19,7 @@ foreach($result as $key => $value){
     <div class='col-lg-2 col-md-2 mb-2'></div>
 <div class='col-lg-4 col-md-5 mb-5'>
   <div class='card h-100'>
-  <img class='card-img-top' src='$value[img]' alt=''>
+  <img class='card-img-top' src='img/$value[img]' alt=''>
       <div class='card-body'>
       <h4 class='card-title'>$value[item]</h4>
       <h5>$value[price] $</h5>
@@ -101,13 +101,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $customer_id=$conn->lastInsertId();
     } 
     else {
-    $stmt = $conn->prepare("SELECT * FROM customers
+    $stmt = $conn->prepare("SELECT customer_id FROM customers
     WHERE customers.email='$email'");
     $stmt->execute();
 
     $result = $stmt->fetchAll();
 
-    $customer_id = $result[0]['customer_id'];
+    $customer_id = $result;
   }
 
   if(!isset($message)){
