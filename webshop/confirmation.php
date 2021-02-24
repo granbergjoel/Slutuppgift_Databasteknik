@@ -20,10 +20,10 @@ $result = $stmt->fetchAll();
 
 foreach($result as $key =>$value){
 $message = "<div class='alert alert-success' role='success'>
-            <p>Hej $value[customer]!</p>
-            <p>Adress: $value[custom_add]!</p>
-            <p>Email: $value[email]!</p>
-            <p>Tele: $value[phone]!</p>
+            <p>Hej $value[customer]! <br>
+            Adress: $value[custom_add]<br>
+            Email: $value[email]<br>
+            Tele: $value[phone]</p>
             
             
             <p>En order har skapats med Order-id: $id!</p>
